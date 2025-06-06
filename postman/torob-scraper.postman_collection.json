@@ -1,0 +1,33 @@
+{
+  "info": {
+    "_postman_id": "torob-scraper-collection-001",
+    "name": "Torob Scraper API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Scrape Torob Category",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"url\": \"https://torob.com/browse/94/%D8%A7%D9%81%D9%88%D9%86%DB%8C-%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-mobile/\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/scrape",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "scrape"]
+        }
+      },
+      "response": []
+    }
+  ]
+} 
